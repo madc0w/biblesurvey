@@ -7,6 +7,14 @@ body {
     font-weight: bold;
 }
 
+#question {
+    font-size: 22px;
+}
+
+#responses .button {
+    margin-left: 24px;
+}
+
 .modal {
     position: absolute;
     top: 10%;
