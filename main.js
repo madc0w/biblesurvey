@@ -27,6 +27,10 @@ function showQuestion() {
 	document.getElementById('next-question-button').classList.add('hidden');
 	const responseFeedback = document.getElementById('response-feedback');
 	responseFeedback.classList.add('hidden');
+
+	const questionNumber = document.getElementById('question-number');
+	questionNumber.classList.remove('hidden');
+	questionNumber.innerHTML = `${questionIndex + 1} / ${data.length}`;
 }
 
 function response(isAgree) {

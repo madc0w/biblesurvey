@@ -77,3 +77,11 @@ body {
 .response-message {
     font-weight: bold;
 }
+
+#question-number {
+    float: right;
+    font-weight: bold;
+    background-color: #bbb;
+    border-radius: 4px;
+    padding: 4px;
+}
