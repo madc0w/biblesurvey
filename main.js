@@ -1,6 +1,6 @@
 let showingModal;
 let questionIndex = 0;
-let numAgree = 0;
+let numCorrect = 0;
 
 function onLoad() {
 	showModal('intro-modal');
@@ -30,17 +30,33 @@ function showQuestion() {
 }
 
 function response(isAgree) {
-	if (isAgree) {
-		numAgree++;
+	const question = data[questionIndex];
+	if (isAgree == question.isAgreeCorrect) {
+		numCorrect++;
 	}
 	document.getElementById('responses').classList.add('hidden');
 	const responseFeedback = document.getElementById('response-feedback');
-	responseFeedback.innerHTML =
-		data[questionIndex][isAgree ? 'agree' : 'disagree'];
+
+	let html = '';
+	html +=
+		'<div class="response-message">' +
+		'You ' +
+		(isAgree ? 'agree' : 'disagree') +
+		'. ' +
+		question[isAgree ? 'agree' : 'disagree'] +
+		'</div>';
+	for (const c of question.citations) {
+		const link =
+			c.link ||
+			`https://www.biblegateway.com/passage/?search=${c.citation}&version=NIV`;
+		html += `<div class="response-citation"><a href="${link}" target="bs-citation">${c.citation}</a></div>`;
+		html += '<div class="response-verse">' + c.verse + '</div>';
+	}
+	responseFeedback.innerHTML = html;
 	responseFeedback.classList.remove('hidden');
 	// console.log('questionIndex', questionIndex);
 	if (questionIndex >= data.length - 1) {
-		const rate = (100 * numAgree) / data.length;
+		const rate = (100 * numCorrect) / data.length;
 		document.getElementById('agree-rate').innerHTML = rate.toFixed(0);
 		let scoreFeedback;
 		if (rate < 50) {

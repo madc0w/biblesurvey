@@ -11,7 +11,7 @@ body {
     position: absolute;
     top: 10%;
     left: calc(50% - 150px);
-    height: 400px;
+    /* height: 400px; */
     width: 300px;
     border-radius: 8px;
     border-style: solid;
@@ -28,6 +28,15 @@ body {
     font-size: 22px;
 }
 
+.modal-content {
+    margin-top: 8px;
+    margin-bottom: 16px;
+}
+
+.modal-content div {
+    margin-bottom: 16px;
+}
+
 .button {
     border-radius: 8px;
     border-style: solid;
@@ -40,6 +49,9 @@ body {
     box-shadow: 4px 4px 8px 2px #888;
     color: white;
     font-size: 22px;
+    margin-top: 8px;
+    margin-bottom: 8px;
+    max-width: 120px;
 }
 
 .button:hover {
@@ -48,4 +60,20 @@ body {
 
 .hidden {
     display: none;
+}
+
+#intro-modal .button {
+    margin-left: 80px;
+}
+
+#content div {
+    margin-bottom: 16px;
+}
+
+.response-verse {
+    margin-left: 24px;
+}
+
+.response-message {
+    font-weight: bold;
 }
