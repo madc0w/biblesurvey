@@ -7,20 +7,44 @@
 			href="https://fonts.googleapis.com/css?family=Lato"
 			rel="stylesheet"
 		/>
-		<style>
-			body {
-				font-family: Lato;
-			}
-
-			#title {
-				font-size: 22px;
-				font-weight: bold;
-			}
-		</style>
 		<script type="text/javascript" src="main.js"></script>
+		<script type="text/javascript" src="data.js"></script>
+		<link rel="stylesheet" type="text/css" href="style.css" />
 	</head>
-	<body>
+	<body onload="onLoad()">
 		<div id="title">Bible Survey</div>
 		<hr />
+		<div id="content" class="hidden">
+			<div id="question"></div>
+
+			<div id="responses">
+				<div id="responses-agree" class="button" onclick="response(true)">
+					I Agree
+				</div>
+				<div id="responses-disagree" class="button" onclick="response(false)">
+					I Disagree
+				</div>
+			</div>
+			<div id="response-feedback"></div>
+			<div
+				id="next-question-button"
+				class="button hidden"
+				onclick="showQuestion()"
+			>
+				Next Question
+			</div>
+			<div id="final-score" class="hidden">
+				<div>
+					You agreed with Jesus <span id="agree-rate"></span>% of the time.
+				</div>
+				<div>You are <span id="score-feedback"></span> Christian!</div>
+			</div>
+		</div>
 	</body>
+
+	<div id="intro-modal" class="modal hidden">
+		<div class="header">Welcome to Bible Survey!</div>
+		<div class="modal-content"></div>
+		<div class="button" onclick="start()">Let's Go</div>
+	</div>
 </html>
