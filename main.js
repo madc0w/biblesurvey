@@ -16,6 +16,8 @@ function onLoad() {
 }
 
 function start() {
+	questionIndex = 0;
+	numCorrect = 0;
 	closeModals();
 	document.getElementById('content').classList.remove('hidden');
 	showQuestion();
@@ -35,7 +37,7 @@ function showQuestion() {
 
 function response(isAgree) {
 	const question = data[questionIndex];
-	if (isAgree == question.isAgreeCorrect) {
+	if (isAgree == !!question.isAgreeCorrect) {
 		numCorrect++;
 	}
 	document.getElementById('responses').classList.add('hidden');
@@ -46,7 +48,7 @@ function response(isAgree) {
 		'<div class="response-message">' +
 		'You ' +
 		(isAgree ? 'agree' : 'disagree') +
-		'. ' +
+		'.<br/>' +
 		question[isAgree ? 'agree' : 'disagree'] +
 		'</div>';
 	for (const c of question.citations) {
@@ -71,7 +73,7 @@ function response(isAgree) {
 			scoreFeedback = 'a very good';
 		}
 		document.getElementById('score-feedback').innerHTML = scoreFeedback;
-		document.getElementById('final-score').classList.remove('hidden');
+		showModal('result-modal');
 	} else {
 		document.getElementById('next-question-button').classList.remove('hidden');
 		questionIndex++;

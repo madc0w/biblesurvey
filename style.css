@@ -66,6 +66,10 @@ body {
     margin-left: 80px;
 }
 
+#result-modal .button {
+    margin-left: 80px;
+}
+
 #content div {
     margin-bottom: 16px;
 }

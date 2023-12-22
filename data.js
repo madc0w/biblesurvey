@@ -1,7 +1,7 @@
 const data = [
 	{
 		question:
-			'In order to be a true disciple of Christ, you must love yourself and your family first.',
+			'In order to be a true disciple of Christ, you must first love yourself and your family.',
 		agree: "Sorry, Jesus isn't with you on this one.",
 		disagree:
 			'Good work! Jesus is on your side. Jesus teaches us that his disciples must hate themselves and their families.',
@@ -35,8 +35,9 @@ const data = [
 	},
 	{
 		question: 'Slavery is an abomination before the Lord.',
-		agree: 'That was a tough one, but Jesus disagrees with you here.',
-		disagree: 'Good work! Jesus instructs us on how to treat our slaves.',
+		agree: 'That was a tough one, but the Bible disagrees with you here.',
+		disagree:
+			'Good work! The New Testament instructs us on how to treat our slaves.',
 		citations: [
 			{
 				citation: 'Ephesians 6:5',
@@ -46,13 +47,13 @@ const data = [
 			{
 				citation: 'Luke 12:47',
 				verse:
-					"The servant [slave] who knows the master's will and does not do what the master wants will be beaten with many blows.",
+					"The servant who knows the master's will and does not do what the master wants will be beaten with many blows.",
 			},
 		],
 	},
 	{
 		question:
-			'The Lord condemns evil atheist regimes, such as those of Stalin and Mao, as well as other tyrants, like Hitler.',
+			'The Lord condemns evil atheist regimes, such as those of Stalin, Mao, and Pol Pot, and all other tyrants, too, like Hitler.',
 		agree:
 			'Unfortunately, the Bible disagrees with you here. Every leader is chosen by God, and those who rebel against their leaders are guilty as if they were rebelling against God Himself.',
 		disagree:
