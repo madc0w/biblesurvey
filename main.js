@@ -17,6 +17,7 @@ function start() {
 	questionIndex = 0;
 	numCorrect = 0;
 	closeModals();
+	hide('results');
 	show('content');
 	showQuestion();
 }
@@ -27,9 +28,7 @@ function showQuestion() {
 	hide('next-question-button');
 	hide('response-feedback');
 	show('question-number');
-	document.getElementById('question-number').innerHTML = `${
-		questionIndex + 1
-	} / ${data.length}`;
+	updateScore();
 }
 
 function response(isAgree) {
@@ -100,8 +99,9 @@ function response(isAgree) {
 		show('results');
 	} else {
 		show('next-question-button');
-		questionIndex++;
 	}
+	updateScore();
+	questionIndex++;
 }
 
 function showModal(id) {
@@ -124,4 +124,12 @@ function hide(id) {
 
 function show(id, effect) {
 	document.getElementById(id).classList.remove('hidden');
+}
+
+function updateScore() {
+	document.getElementById(
+		'question-number'
+	).innerHTML = `Score: ${numCorrect} / ${
+		questionIndex + 1
+	} | Current Question: ${questionIndex + 1} / ${data.length}`;
 }
