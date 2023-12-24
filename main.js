@@ -67,8 +67,19 @@ function response(isAgree) {
 	}
 	html += '</div>';
 
-	document.getElementById('response-feedback').innerHTML = html;
+	const responseFeedback = document.getElementById('response-feedback');
+	responseFeedback.innerHTML = html;
+	let opacity = 0;
+	responseFeedback.style.opacity = opacity;
 	show('response-feedback');
+	const opacityIntervalId = setInterval(() => {
+		opacity += 0.02;
+		responseFeedback.style.opacity = opacity;
+		if (opacity >= 1) {
+			clearInterval(opacityIntervalId);
+		}
+	}, 40);
+
 	// console.log('questionIndex', questionIndex);
 	if (questionIndex >= data.length - 1) {
 		const rate = (100 * numCorrect) / data.length;
@@ -111,6 +122,6 @@ function hide(id) {
 	document.getElementById(id).classList.add('hidden');
 }
 
-function show(id) {
+function show(id, effect) {
 	document.getElementById(id).classList.remove('hidden');
 }

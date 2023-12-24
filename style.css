@@ -11,6 +11,10 @@ body {
     font-size: 22px;
 }
 
+#responses  {
+    display: flex;
+}
+
 #responses .button {
     margin-left: 24px;
 }
@@ -84,10 +88,6 @@ body {
     background-color: #444;
 }
 
-.hidden {
-    display: none;
-}
-
 #intro-modal .button {
     margin-left: 80px;
 }
@@ -114,4 +114,8 @@ body {
     background-color: #bbb;
     border-radius: 4px;
     padding: 4px;
+}
+
+.hidden {
+    display: none !important;
 }
