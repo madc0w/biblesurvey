@@ -114,7 +114,8 @@ const data = [
 		],
 	},
 	{
-		question: "Great wealth is a sign of God's favor and blessing.",
+		question:
+			"Great wealth is a sign of God's favor, a blessing, and a reward for being a good Christian.",
 		agree:
 			'The Bible disagrees with you. Many verses discuss the virtue of poverty and condemn the accumulation of wealth.',
 		disagree:
@@ -150,7 +151,7 @@ const data = [
 	},
 	{
 		question:
-			'The law of Leviticus, Numbers, and Deuteronomy do not apply to Christians and were written only for the Israelites.',
+			'The laws of Leviticus, Numbers, and Deuteronomy do not apply to Christians and were written only for the Israelites.',
 		agree: "I'm afraid the Bible doesn't quite agree. Sorry, no bacon for you!",
 		disagree:
 			"That's right! So stop wearing those poly-cotton blends, and put down that cheeseburger.",
