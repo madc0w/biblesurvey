@@ -34,28 +34,29 @@
 			>
 				Next Question
 			</div>
+
+			<div id="results" class="hidden">
+				<hr />
+				<div class="header">Your Score</div>
+				<div id="results-content">
+					<div>
+						You agreed with Jesus and the Holy Bible
+						<span id="agree-rate"></span>% of the time.
+					</div>
+					<div>You are <span id="score-feedback"></span> Christian!</div>
+				</div>
+				<div class="button" onclick="start()">Go Again</div>
+			</div>
 		</div>
 	</body>
-
-	<div id="result-modal" class="modal hidden">
-		<div class="header">Your Score</div>
-		<hr />
-		<div class="modal-content">
-			<div>
-				You agreed with Jesus <span id="agree-rate"></span>% of the time.
-			</div>
-			<div>You are <span id="score-feedback"></span> Christian!</div>
-		</div>
-		<div class="button" onclick="start()">Go Again</div>
-	</div>
 
 	<div id="intro-modal" class="modal hidden">
 		<div class="header">Welcome to the Bible Survey!</div>
 		<hr />
 		<div class="modal-content">
 			<div>
-				Are you ready to find out if your values align with those of the Jesus,
-				as recorded in the New Testament? Take this quiz to see how good a
+				Are you ready to find out if your values align with those of Jesus, as
+				recorded in the New Testament? Take this quiz to see how good a
 				Christian you are!
 			</div>
 			<div>Just agree or disagree with each statement. Good luck!</div>
