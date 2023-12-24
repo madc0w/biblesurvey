@@ -73,7 +73,7 @@ function response(isAgree) {
 	responseFeedback.style.opacity = opacity;
 	show('response-feedback');
 	const opacityIntervalId = setInterval(() => {
-		opacity += 0.02;
+		opacity += 0.032;
 		responseFeedback.style.opacity = opacity;
 		if (opacity >= 1) {
 			clearInterval(opacityIntervalId);

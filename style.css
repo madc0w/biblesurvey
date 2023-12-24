@@ -3,12 +3,13 @@ body {
 }
 
 #title {
-    font-size: 22px;
+    font-size: 32px;
     font-weight: bold;
+    font-family: Dancing Script;
 }
 
 #question {
-    font-size: 22px;
+    font-size: 32px;
 }
 
 #responses  {
@@ -86,6 +87,10 @@ body {
 
 .button:hover {
     background-color: #444;
+}
+
+#intro-modal .header {
+    font-family: Dancing Script;
 }
 
 #intro-modal .button {

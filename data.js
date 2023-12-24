@@ -1,7 +1,25 @@
 const data = [
 	{
+		question: 'Followers of Jesus should love one another.',
+		isAgreeCorrect: true,
+		agree: 'Very good. That was an easy one.',
+		disagree: 'Seriously? That was an easy one.',
+		citations: [
+			{
+				citation: 'John 13:34',
+				verse:
+					'"A new command I give you: Love one another. As I have loved you, so you must love one another."',
+			},
+			{
+				citation: 'Matthew 5:43',
+				verse:
+					'"You have heard that it was said, \'Love your neighbor and hate your enemy.\' But I tell you, love your enemies and pray for those who persecute you, that you may be children of your Father in heaven."',
+			},
+		],
+	},
+	{
 		question:
-			'In order to be a true disciple of Christ, begin by loving your family.',
+			'In order to be a true disciple of Christ, you must love your family.',
 		agree: "Sorry, Jesus isn't with you on this one.",
 		disagree:
 			'Good work! Jesus is on your side. Jesus teaches us that his disciples must hate themselves and their families.',
@@ -35,9 +53,10 @@ const data = [
 	},
 	{
 		question: 'Slavery is an abomination before the Lord.',
-		agree: 'That was a tough one, but the Bible disagrees with you here.',
+		agree:
+			'That was a tough one, but the Bible disagrees with you here. Both the New and Old Testaments instruct us on how to treat our slaves.',
 		disagree:
-			'Good work! The New Testament instructs us on how to treat our slaves.',
+			'Good work! Both the New and Old Testaments instruct us on how to treat our slaves.',
 		citations: [
 			{
 				citation: 'Ephesians 6:5',
@@ -54,9 +73,9 @@ const data = [
 	{
 		question: 'The Lord condemns evil atheist regimes.',
 		agree:
-			'Unfortunately, the Bible disagrees with you here.<br/>Every leader is chosen by God, and those who rebel against their leaders are guilty as if they were rebelling against God Himself.<br/>God is on the side of Stalin, Mao, Pol Pot, and Hitler. George Washington was a very bad Christian for rebelling against the established authority.',
+			'Unfortunately, the Bible disagrees with you here.<br/>Every leader is chosen by God, and those who rebel against their leaders are guilty as if they were rebelling against God Himself.<br/>God is on the side of Stalin, Mao, Pol Pot, and Hitler, and George Washington was a very bad Christian for rebelling against the established authority.',
 		disagree:
-			"You're too good! The Bible agrees with you.<br/>Every leader is chosen by God, and those who rebel against their leaders are guilty as if they were rebelling against God Himself.<br/>God is on the side of Stalin, Mao, Pol Pot, and Hitler. George Washington was a very bad Christian for rebelling against the established authority.",
+			"You're too good! The Bible agrees with you.<br/>Every leader is chosen by God, and those who rebel against their leaders are guilty as if they were rebelling against God Himself.<br/>God is on the side of Stalin, Mao, Pol Pot, and Hitler, and George Washington was a very bad Christian for rebelling against the established authority.",
 		citations: [
 			{
 				citation: 'Romans 13:1',
@@ -214,6 +233,11 @@ const data = [
 				citation: 'Mark 11:23',
 				verse:
 					'"Truly I tell you, if anyone says to this mountain, \'Go, throw yourself into the sea,\' and does not doubt in their heart but believes that what they say will happen, it will be done for them. Therefore I tell you, whatever you ask for in prayer, believe that you have received it, and it will be yours."',
+			},
+			{
+				citation: 'Matthew 17:20',
+				verse:
+					'He replied, "Because you have so little faith. Truly I tell you, if you have faith as small as a mustard seed, you can say to this mountain, \'Move from here to there,\' and it will move. Nothing will be impossible for you."',
 			},
 		],
 	},
