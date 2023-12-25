@@ -60,7 +60,7 @@ function response(isAgree) {
 	html += '<div class="response-message">';
 	if (question.isContradiction) {
 		html +=
-			'That was a tough one. The good news is, whether or not your believe that this is true, the Bible agrees with you! Good work, you get a point.';
+			'That was a tough one. The good news is, whether or not you believe that this is true, the Bible agrees with you! Good work, you get a point.';
 	} else {
 		html += question[isAgree ? 'agree' : 'disagree'];
 	}
