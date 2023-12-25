@@ -259,7 +259,7 @@ const data = [
 		],
 	},
 	{
-		question: 'Jesus is was a perfect man, and he could never sin.',
+		question: 'Jesus was a perfect man, and he could never sin.',
 		agree:
 			'Sorry, but Jesus does sin against his own commandment when he calls teachers of the law "blind fools", thereby placing himself "in danger of the fire of hell", according to his words.',
 		disagree:
