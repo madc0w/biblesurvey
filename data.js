@@ -63,11 +63,11 @@ const data = [
 				verse:
 					'Slaves, obey your earthly masters with respect and fear, and with sincerity of heart, just as you would obey Christ.',
 			},
-			{
-				citation: 'Luke 12:47',
-				verse:
-					"The servant who knows the master's will and does not do what the master wants will be beaten with many blows.",
-			},
+			// {
+			// 	citation: 'Luke 12:47',
+			// 	verse:
+			// 		"The servant who knows the master's will and does not do what the master wants will be beaten with many blows.",
+			// },
 		],
 	},
 	{
