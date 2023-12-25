@@ -151,7 +151,7 @@ const data = [
 	},
 	{
 		question:
-			'The laws of Leviticus, Numbers, and Deuteronomy do not apply to Christians and were written only for the Israelites.',
+			'The Laws of Leviticus, Numbers, and Deuteronomy do not apply to Christians and were written only for the Israelites.',
 		agree: "I'm afraid the Bible doesn't quite agree. Sorry, no bacon for you!",
 		disagree:
 			"That's right! So stop wearing those poly-cotton blends, and put down that cheeseburger.",
@@ -164,7 +164,7 @@ const data = [
 			{
 				citation: 'Matthew 5:17',
 				verse:
-					'Do not think that I have come to abolish the Law or the Prophets; I have not come to abolish them but to fulfill them.',
+					'Do not think that I have come to abolish the Law or the Prophets; I have not come to abolish them but to fulfill them. For truly I tell you, until heaven and earth disappear, not the smallest letter, not the least stroke of a pen, will by any means disappear from the Law until everything is accomplished.',
 			},
 			{
 				citation: 'Romans 3:31',
