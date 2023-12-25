@@ -86,7 +86,7 @@ const data = [
 	},
 	{
 		question:
-			'Anyone can choose to be saved by accepting Jesus Christ as their Lord and Savior.',
+			'Anyone can choose to accept Jesus Christ as their Lord and Savior.',
 		agree:
 			'Well, not exactly. God decides whose hearts will be hardened against Him, not the person.',
 		disagree:
