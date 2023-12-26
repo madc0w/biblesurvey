@@ -1,4 +1,4 @@
-let showingModal, questionIndex, numCorrect;
+let showingModal, questionIndex, answers;
 
 function onLoad() {
 	showModal('intro-modal');
@@ -15,7 +15,7 @@ function onLoad() {
 
 function start() {
 	questionIndex = 0;
-	numCorrect = 0;
+	answers = [];
 	closeModals();
 	hide('results');
 	show('content');
@@ -29,13 +29,27 @@ function showQuestion() {
 	hide('response-feedback');
 	show('question-number');
 	updateScore();
+
+	if (questionIndex >= 1) {
+		show('previous-question');
+	} else {
+		hide('previous-question');
+	}
+}
+
+function previousQuestion() {
+	questionIndex--;
+	closeModals();
+	hide('results');
+	show('content');
+	delete answers[answers.length - 1];
+	answers.length--;
+	showQuestion();
 }
 
 function response(isAgree) {
 	const question = data[questionIndex];
-	if (isAgree == !!question.isAgreeCorrect || question.isContradiction) {
-		numCorrect++;
-	}
+	answers[questionIndex] = isAgree;
 	hide('responses');
 
 	let html = '';
@@ -81,7 +95,7 @@ function response(isAgree) {
 
 	// console.log('questionIndex', questionIndex);
 	if (questionIndex >= data.length - 1) {
-		const rate = (100 * numCorrect) / data.length;
+		const rate = (100 * numCorrect()) / data.length;
 		document.getElementById('agree-rate').innerHTML = rate.toFixed(0);
 		let scoreFeedback;
 		if (rate < 50) {
@@ -129,7 +143,22 @@ function show(id, effect) {
 function updateScore() {
 	document.getElementById(
 		'question-number'
-	).innerHTML = `Score: ${numCorrect} / ${
+	).innerHTML = `Score: ${numCorrect()} / ${
 		questionIndex + 1
 	} | Current Question: ${questionIndex + 1} / ${data.length}`;
+}
+
+function numCorrect() {
+	let numCorrect = 0;
+
+	// console.log('answers', answers);
+	// console.log('questionIndex', questionIndex);
+	for (let i = 0; i < answers.length; i++) {
+		const answer = answers[i];
+		const question = data[i];
+		if (answer == !!question.isAgreeCorrect || question.isContradiction) {
+			numCorrect++;
+		}
+	}
+	return numCorrect;
 }

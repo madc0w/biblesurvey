@@ -129,6 +129,10 @@ body {
     padding: 4px;
 }
 
+#previous-question {
+    cursor: pointer;
+}
+
 .hidden {
     display: none !important;
 }
