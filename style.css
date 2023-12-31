@@ -119,6 +119,17 @@ body {
 
 .response-message {
     font-weight: bold;
+    display: flex;
+    /* background-color: green; */
+}
+
+.response-message img {
+    height: 40px;
+    margin-right: 8px;
+}
+
+.response-message div {
+    margin-top: 12px;
 }
 
 #question-number {

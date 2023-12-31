@@ -38,7 +38,7 @@ const data = [
 		],
 	},
 	{
-		question: 'Being a teacher is a good job for a woman.',
+		question: 'Teaching is a good job for a woman.',
 		agree:
 			"Sorry, Jesus isn't with you on this one. Women have nothing to teach men, and should absolutely never hold any position of authority.",
 		disagree:

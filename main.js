@@ -74,9 +74,14 @@ function response(isAgree) {
 	html += '<div class="response-message">';
 	if (question.isContradiction) {
 		html +=
-			'That was a tough one. The good news is, whether or not you believe that this is true, the Bible agrees with you! Good work, you get a point.';
+			'<img src="shrug-emoji.png"/> <div>That was a tough one. The good news is, whether or not you believe that this is true, the Bible agrees with you! Good work, you get a point.</div>';
 	} else {
-		html += question[isAgree ? 'agree' : 'disagree'];
+		html +=
+			`<img src="${
+				isAgree == question.isAgreeCorrect ? 'check.png' : 'x.png'
+			}" /><div>` +
+			question[isAgree ? 'agree' : 'disagree'] +
+			'</div>';
 	}
 	html += '</div>';
 
