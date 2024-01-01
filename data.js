@@ -19,7 +19,7 @@ const data = [
 	},
 	{
 		question:
-			'In order to be a true disciple of Christ, you must love your family.',
+			'In order to be a true disciple of Christ, you should love your family.',
 		agree: "Sorry, Jesus isn't with you on this one.",
 		disagree:
 			'Good work! Jesus is on your side. Jesus teaches us that his disciples must hate themselves and their families.',
@@ -42,7 +42,7 @@ const data = [
 		agree:
 			"Sorry, Jesus isn't with you on this one. Women have nothing to teach men, and should absolutely never hold any position of authority.",
 		disagree:
-			'Excellent! God made women to be subservient and quiet, and to do whatever their husbands command, not to be teachers.',
+			'Excellent! God made women to be subservient and quiet, and to do whatever their husbands command, not to be teachers. A woman should never teach a man, and certainly never to go into politics.',
 		citations: [
 			{
 				citation: '1 Timothy 2:12',

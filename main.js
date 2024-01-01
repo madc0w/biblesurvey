@@ -78,7 +78,7 @@ function response(isAgree) {
 	} else {
 		html +=
 			`<img src="${
-				isAgree == question.isAgreeCorrect ? 'check.png' : 'x.png'
+				isAgree == !!question.isAgreeCorrect ? 'check.png' : 'x.png'
 			}" /><div>` +
 			question[isAgree ? 'agree' : 'disagree'] +
 			'</div>';
