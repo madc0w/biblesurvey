@@ -100,6 +100,21 @@ const data = [
 		],
 	},
 	{
+		question: 'Anyone who calls on the name of the Lord will be saved.',
+		isContradiction: true,
+		citations: [
+			{
+				citation: 'Acts 2:21',
+				verse: 'And everyone who calls on the name of the Lord will be saved.',
+			},
+			{
+				citation: 'Matthew 7:21',
+				verse:
+					'Not everyone who says to me, ‘Lord, Lord,’ will enter the kingdom of heaven, but only the one who does the will of my Father who is in heaven.',
+			},
+		],
+	},
+	{
 		question: 'Abortion is a sin and an abomination in the eyes of Jesus.',
 		agree:
 			"Well, Jesus isn't recorded as having said anything about this practice, but the Old Testament does.",
