@@ -115,6 +115,25 @@ const data = [
 		],
 	},
 	{
+		question: 'Jesus is never wrong about anything.',
+		agree:
+			'Well, not exactly. Jesus predicted the apocalypse within his own generation. Most historians agree that this event did not occur.',
+		disagree:
+			"You're right! Jesus predicted the apocalypse within his own generation. Most historians agree that this event did not occur.",
+		citations: [
+			{
+				citation: 'Mark 9:1',
+				verse:
+					'And he said to them, "Truly I tell you, some who are standing here will not taste death before they see that the kingdom of God has come with power."',
+			},
+			{
+				citation: 'Mark 13:24',
+				verse:
+					"\"But in those days, following that distress, 'The sun will be darkened,and the moon will not give its light; the stars will fall from the sky, and the heavenly bodies will be shaken.' At that time people will see the Son of Man coming in clouds with great power and glory. And he will send his angels and gather his elect from the four winds, from the ends of the earth to the ends of the heavens. Now learn this lesson from the fig tree: As soon as its twigs get tender and its leaves come out, you know that summer is near. Even so, when you see these things happening, you know that it is near, right at the door. Truly I tell you, this generation will certainly not pass away until all these things have happened.",
+			},
+		],
+	},
+	{
 		question: 'Abortion is a sin and an abomination in the eyes of Jesus.',
 		agree:
 			"Well, Jesus isn't recorded as having said anything about this practice, but the Old Testament does.",
