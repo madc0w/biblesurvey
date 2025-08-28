@@ -49,6 +49,11 @@ const data = [
 				verse:
 					'I do not permit a woman to teach or to assume authority over a man; she must be quiet.',
 			},
+			{
+				citation: '1 Corinthians 14:34-35',
+				verse:
+					'Women should remain silent in the churches. They are not allowed to speak, but must be in submission, as the law says. If they want to inquire about something, they should ask their own husbands at home; for it is disgraceful for a woman to speak in the church.',
+			},
 		],
 	},
 	{
